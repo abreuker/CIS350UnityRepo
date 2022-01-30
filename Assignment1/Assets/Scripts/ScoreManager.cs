@@ -4,6 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/*
+ * Anna Breuker
+ * Prototype 1
+ * A script that manages the score and game state.
+ */
+
 public class ScoreManager : MonoBehaviour
 {
 

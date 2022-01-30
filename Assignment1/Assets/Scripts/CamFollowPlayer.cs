@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Anna Breuker
+ * Prototype 1
+ * A script that has the camera following the player.
+ */
+
 public class CamFollowPlayer : MonoBehaviour
 {
 

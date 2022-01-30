@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Anna Breuker
+ * Prototype 1
+ * A script that allows the user to control
+ * the player.
+ */
+
 public class PlayerController : MonoBehaviour
 {
     public float speed;
