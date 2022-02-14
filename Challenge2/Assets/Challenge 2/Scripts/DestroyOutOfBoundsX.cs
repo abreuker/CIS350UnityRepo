@@ -23,7 +23,7 @@ public class DestroyOutOfBoundsX : MonoBehaviour
             Destroy(gameObject);
         } 
         // Destroy balls if y position is less than bottomLimit
-        else if (transform.position.y < bottomLimit)
+        if (transform.position.y < bottomLimit)
         {
             GameObject.FindGameObjectWithTag("HealthSystem").GetComponent<HealthSystem>().TakeDamage();
             Destroy(gameObject);
