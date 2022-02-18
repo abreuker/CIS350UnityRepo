@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Anna Breuker
+ * Prototype3
+ * This script manages the obstacles that spawn in.
+ */
+
 public class SpawnManager : MonoBehaviour
 {
     public GameObject obstaclePrefab;

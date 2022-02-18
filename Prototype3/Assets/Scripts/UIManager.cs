@@ -4,6 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/*
+ * Anna Breuker
+ * Prototype3
+ * This script manages the UI and how it's displayed to the user.
+ */
+
 public class UIManager : MonoBehaviour
 {
 
