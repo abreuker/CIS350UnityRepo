@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Anna Breuker
+ * Challenge3
+ * This script manages how the money and bombs spawn.
+ */
+
+
 public class SpawnManagerX : MonoBehaviour
 {
     public GameObject[] objectPrefabs;
@@ -13,7 +20,7 @@ public class SpawnManagerX : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("PrawnsObject", spawnDelay, spawnInterval);
+        InvokeRepeating("SpawnObjects", spawnDelay, spawnInterval);
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerControllerX>();
     }
 

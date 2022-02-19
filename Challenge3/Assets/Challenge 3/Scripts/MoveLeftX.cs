@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Anna Breuker
+ * Challenge3
+ * This script makes the objects and background move left (and destroys the objects when they're
+ * out of bounds.)
+ */
+
 public class MoveLeftX : MonoBehaviour
 {
     public float speed;
@@ -18,7 +25,7 @@ public class MoveLeftX : MonoBehaviour
     void Update()
     {
         // If game is not over, move to the left
-        if (playerControllerScript.gameOver)
+        if (!playerControllerScript.gameOver)
         {
             transform.Translate(Vector3.left * speed * Time.deltaTime, Space.World);
         }
