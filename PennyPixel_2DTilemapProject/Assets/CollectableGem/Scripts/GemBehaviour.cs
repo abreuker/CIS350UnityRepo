@@ -2,12 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Anna Breuker
+ * Assignment 5A
+ * This script controls the gems and how they give score.
+ */
+
 public class GemBehaviour : MonoBehaviour
 {
 	[Header("References")]
 	public GameObject gemVisuals;
 	public GameObject collectedParticleSystem;
 	public CircleCollider2D gemCollider2D;
+	public ScoreManager scoreManagerScript;
 
 	private float durationOfCollectedParticleSystem;
 
@@ -15,6 +22,11 @@ public class GemBehaviour : MonoBehaviour
 	void Start()
 	{
 		durationOfCollectedParticleSystem = collectedParticleSystem.GetComponent<ParticleSystem>().main.duration;
+
+		if (scoreManagerScript == null)
+		{
+			scoreManagerScript = GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager>();
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D theCollider)
@@ -29,6 +41,7 @@ public class GemBehaviour : MonoBehaviour
 		gemCollider2D.enabled = false;
 		gemVisuals.SetActive (false);
 		collectedParticleSystem.SetActive (true);
+		scoreManagerScript.score++;
 		Invoke ("DeactivateGemGameObject", durationOfCollectedParticleSystem);
 
 	}

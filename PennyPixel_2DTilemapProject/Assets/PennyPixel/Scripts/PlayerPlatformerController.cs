@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Anna Breuker
+ * Assignment 5A
+ * This script controls the player character.
+ */
+
 public class PlayerPlatformerController : PhysicsObject {
 
     public float maxSpeed = 7;
@@ -9,6 +15,11 @@ public class PlayerPlatformerController : PhysicsObject {
 
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+
+    public bool fallen;
+    public bool won;
+    public float lowerBound;
+    public bool triggered;
 
     // Use this for initialization
     void Awake () 
@@ -49,7 +60,13 @@ public class PlayerPlatformerController : PhysicsObject {
 
         animator.SetBool ("grounded", grounded);
         animator.SetFloat ("velocityX", Mathf.Abs (velocity.x) / maxSpeed);
+        animator.SetFloat ("velocityY", velocity.y);
 
         targetVelocity = move * maxSpeed;
+
+        if (transform.position.y < lowerBound)
+        {
+            fallen = true;
+        }
     }
 }
