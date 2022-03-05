@@ -2,29 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Anna Breuker
+ * Assignment 5A
+ * This script allows the win trigger zone to show that the game is won.
+ */
+
 public class WinZoneBehavior : MonoBehaviour
 {
     public PlayerPlatformerController playerControllerScript;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        if (playerControllerScript == null)
-        {
-            playerControllerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerPlatformerController>();
-        }
-    }
+    public BoxCollider2D winCollider2D;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("player won!");
             playerControllerScript.won = true;
         }
     }
