@@ -4,12 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-/*
- * Anna Breuker
- * Assignment 5A
- * This script manages the score and the UI.
- */
-
 public class ScoreManager : MonoBehaviour
 {
     public Text scoreText;
