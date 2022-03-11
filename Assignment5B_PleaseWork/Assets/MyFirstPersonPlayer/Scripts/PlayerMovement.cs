@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+* Anna Breuker
+* Assignment 5B
+* This script is reposnible for the player movement.
+*/
+
 public class PlayerMovement : MonoBehaviour
 {
 

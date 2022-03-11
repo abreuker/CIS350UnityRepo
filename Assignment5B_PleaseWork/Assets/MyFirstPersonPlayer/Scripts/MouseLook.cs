@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 /*
 * Anna Breuker
 * Assignment 5B
 * This script is reposnible for the camera looking around based on mouse movement.
 */
+
 public class MouseLook : MonoBehaviour
 {
 	public float mouseSensitivity = 100f;
