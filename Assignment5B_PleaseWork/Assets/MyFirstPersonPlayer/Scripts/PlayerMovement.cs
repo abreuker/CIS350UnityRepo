@@ -25,9 +25,12 @@ public class PlayerMovement : MonoBehaviour
 
     public float jumpHeight = 3f;
 
+    private UIManager uIManager;
+
     public void Awake()
     {
         gravity *= gravityMultiplier;
+        uIManager = GameObject.Find("UIManager").GetComponent<UIManager>();
     }
 
     void Update()
@@ -56,5 +59,14 @@ public class PlayerMovement : MonoBehaviour
         //gravity to velocity
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
+      
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("WinZone"))
+        {
+            uIManager.won = true;
+        }
     }
 }

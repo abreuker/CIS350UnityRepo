@@ -11,11 +11,17 @@ using UnityEngine;
 public class Target : MonoBehaviour
 {
     public float health = 50f;
+    public UIManager uIManager;
 
+    void Start()
+    {
+        uIManager = GameObject.Find("UIManager").GetComponent<UIManager>();
+    }
 
     public void TakeDamage(float amount)
     {
         health -= amount;
+        uIManager.score++;
         if (health <= 0)
         {
             Die();
