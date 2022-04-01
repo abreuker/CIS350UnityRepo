@@ -2,19 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Enemy : MonoBehaviour
+public abstract class Enemy : MonoBehaviour, IDamagable
 {
 
     protected float speed;
     protected float health;
 
+    [SerializeField] protected Weapon weapon;
+
     protected virtual void Awake()
     {
-        spped = 5f;
+        weapon = gameObject.AddComponent<Weapon>();
+        speed = 5f;
         health = 100;
+
+        weapon.damageBonus = 10;
     }
 
-    protected abstract void Attack();
+    protected abstract void Attack(int amount);
+
+    public abstract void TakeDamage(int amount);
 
 
     // Start is called before the first frame update
