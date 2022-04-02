@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: bd2d84b5ed995e7479ce3f6308a94ffa
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
-    guid: 6c7b79fafc95e514a8f7cbc49882af65
+    path: Assets/Scenes/Tutorial.unity
+    guid: 6bffdbf3e8c6396468612b569ad7b813
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
-    guid: 4e5355427d6d1e643bcb2f70c9df5115
+    path: Assets/Scenes/PathwayNotIce.unity
+    guid: e401f3573709d7447819f74d24a8c511
   - enabled: 1
     path: Assets/Scenes/PathwayIce.unity
     guid: 0cef07ba079b32d4d89fce2e9be1c091

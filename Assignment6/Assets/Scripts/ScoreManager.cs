@@ -19,6 +19,8 @@ public class ScoreManager : MonoBehaviour
 
     public Text textbox;
 
+    public TutorialManager tutManager;
+
     void Start()
     {
         gameOver = false;
@@ -30,13 +32,13 @@ public class ScoreManager : MonoBehaviour
     void Update()
     {
         //game not over??? display score
-        if (!gameOver)
+        if (!gameOver && tutManager.progression >= 5)
         {
             textbox.text = "Score: " + score;
         }
 
         //win condition: 75 or more points
-        if (score >= 75)
+        if (score >= 75 || won)
         {
             won = true;
             gameOver = true;
