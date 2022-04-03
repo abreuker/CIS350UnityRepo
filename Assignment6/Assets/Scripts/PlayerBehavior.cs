@@ -4,7 +4,7 @@ using UnityEngine;
 
 /*
 * Anna Breuker
-* Assignment 5B
+* Assignment 6
 * This script is reposnible for the player movement.
 */
 

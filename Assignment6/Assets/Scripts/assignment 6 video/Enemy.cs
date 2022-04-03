@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Anna Breuker
+ * Assignment 6
+ * An abstract class that manages an Enemy that implements the IDamagable interface.
+ */
+
 public abstract class Enemy : MonoBehaviour, IDamagable
 {
 

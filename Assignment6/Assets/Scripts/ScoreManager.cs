@@ -46,15 +46,19 @@ public class ScoreManager : MonoBehaviour
 
         if (gameOver)
         {
-            if (won)
+            if (won && tutManager.isActuallyTutorial)
             {
-                textbox.text = "You Win :)\nPress R to try again!";
+                textbox.text = "Have fun!\nPress M to return to the main menu!";
+            }
+            else if (won)
+            {
+                textbox.text = "You Win :)\nPress M to return to the main menu!";
             }
             else
             {
-                textbox.text = "You lose :(\nPress R to try again!";
+                textbox.text = "You lose :(\nPress M to return to the main menu and try again!";
             }
-            if (Input.GetKeyDown(KeyCode.R))
+            if (Input.GetKeyDown(KeyCode.M))
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }

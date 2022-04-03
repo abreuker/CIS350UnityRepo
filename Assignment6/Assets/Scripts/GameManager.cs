@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/*
+ * Anna Breuker
+ * Assignment 6
+ * The Game Manager that manages scenes and the main menu.
+ */
 public class GameManager : Singleton<GameManager>
 //static classes are accessable everywhere but cannot extend monobehavior
 {

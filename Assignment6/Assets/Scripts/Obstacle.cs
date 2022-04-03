@@ -1,7 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * Anna Breuker
+ * Assignment 6
+ * A class responsible for obstacles and their behavior.
+ */
 public class Obstacle : Interactable
 {
     protected override void Awake()

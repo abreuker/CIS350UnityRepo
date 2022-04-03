@@ -1,7 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * Anna Breuker
+ * Assignment 6
+ * An class for an item weapon that can be held by an enemy.
+ */
 public class Weapon : MonoBehaviour
 {
     public int damageBonus;

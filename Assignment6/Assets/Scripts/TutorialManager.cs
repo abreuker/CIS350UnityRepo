@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
-
+/*
+ * Anna Breuker
+ * Assignment 6
+ * A class responsible for the tutorial.
+ */
 public class TutorialManager : MonoBehaviour
 {
     public ScoreManager scoreManager;
@@ -50,7 +54,7 @@ public class TutorialManager : MonoBehaviour
                 }
                 else if (Input.GetKeyDown(KeyCode.Space) && progression == 3)
                 {
-                    tutorialText.text = "Try to avoid these red cubes and don't fall of the edge or else you'll lose!"
+                    tutorialText.text = "Try to avoid these red cubes and don't fall off the edge or else you'll lose!"
                                         + "\nPress [Space] to continue";
                     Instantiate(cube, new Vector3(-2.75f, 0.9864014f, 20), cube.transform.rotation);
                     progression++;

@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Collections.Generic;
-
+/*
+ * Anna Breuker
+ * Assignment 6
+ * A class for an inventory that showcases [SerializeField] objects.
+ */
 public class Inventory : MonoBehaviour
 {
 

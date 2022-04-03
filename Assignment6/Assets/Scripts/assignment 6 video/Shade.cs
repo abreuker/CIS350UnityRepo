@@ -1,7 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * Anna Breuker
+ * Assignment 6
+ * A class for a Shade, subset of Enemy.
+ */
 public class Shade : Enemy
 {
 

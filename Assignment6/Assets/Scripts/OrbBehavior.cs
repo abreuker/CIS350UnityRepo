@@ -1,7 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * Anna Breuker
+ * Assignment 6
+ * A class responsible for orbs and their behavior.
+ */
 public class OrbBehavior : Interactable, IWorthPoints
 {
     public float pointValue;

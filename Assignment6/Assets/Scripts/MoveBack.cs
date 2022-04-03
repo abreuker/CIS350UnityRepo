@@ -1,7 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * Anna Breuker
+ * Assignment 6
+ * A class that makes sure that all interactables move towards the screen, what I consider "back."
+ */
 public class MoveBack : MonoBehaviour
 {
     //public float speed = 40;

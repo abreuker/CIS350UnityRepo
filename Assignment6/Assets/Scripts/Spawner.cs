@@ -1,7 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * Anna Breuker
+ * Assignment 6
+ * A class responsible for the spawning and despawning of interactable objects.
+ */
 public class Spawner : MonoBehaviour
 {
     public GameObject[] orbPrefabs;

@@ -1,7 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * Anna Breuker
+ * Assignment 6
+ * A class to be implemented for all types of Singletons.
+ */
 public class Singleton<T> : MonoBehaviour where T : Singleton<T>
 {
     private static T instance;
