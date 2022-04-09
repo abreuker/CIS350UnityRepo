@@ -1,7 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * Anna Breuker
+ * Prototype4
+ * This script is responsible for rotating the camera.
+ */
 public class RotateCamera : MonoBehaviour
 {
     public float rotationSpeed;
