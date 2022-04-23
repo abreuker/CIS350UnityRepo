@@ -1,7 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * Anna Breuker
+ * Prototype 5
+ * This script manages the behavior of the targets.
+ */
 public class Target : MonoBehaviour
 {
     private Rigidbody targetRb;
@@ -68,11 +72,4 @@ public class Target : MonoBehaviour
         Destroy(gameObject);
     }
 
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

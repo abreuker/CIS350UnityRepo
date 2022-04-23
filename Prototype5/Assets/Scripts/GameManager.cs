@@ -4,7 +4,11 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+/*
+ * Anna Breuker
+ * Prototype 5
+ * Code for the game manager, which manages the different states of the game and the score.
+ */
 public class GameManager : MonoBehaviour
 {
 
